@@ -1,0 +1,32 @@
+{
+  "story": {
+    "prefix": "story",
+    "body": [
+      "import ${TM_FILENAME/(.*)\\.stories\\..+$/$1/} from './${TM_FILENAME/(.*)\\.stories\\..+$/$1/}.vue';",
+      "//import mdx from './${TM_FILENAME/(.*)\\.stories\\..+$/$1/}.mdx';",
+      "",
+      "export default {",
+      "\ttitle: 'Components/${TM_FILENAME/(.*)\\.stories\\..+$/$1/}',",
+      "\tcomponent: ${TM_FILENAME/(.*)\\.stories\\..+$/$1/},",
+      "//\tparameters: {",
+      "//\t\tdocs: {",
+      "//\t\t\tpage: mdx",
+      "//\t\t}",
+      "//\t},",
+      "};",
+      "",
+      "const Template = (args, { argTypes }) => ({",
+      "\tprops: Object.keys(argTypes),",
+      "\tcomponents: {  ${TM_FILENAME/(.*)\\.stories\\..+$/$1/} },",
+      "\tsetup: () => ({ args }),",
+      "\ttemplate: '<${TM_FILENAME/([A-Z][a-z]*)([A-Z][a-z]*)*\\.stories\\..+$/${1:/downcase}${2:+-}${2:/downcase}/g} v-bind=\"args\"></${TM_FILENAME/([A-Z][a-z]*)([A-Z][a-z]*)*\\.stories\\..+$/${1:/downcase}${2:+-}${2:/downcase}/g}>'",
+      "});",
+      "",
+      "export const Primary = Template.bind({});",
+      "Primary.args = {",
+      "\t$1",
+      "}"
+    ],
+    "description": "Storybook for vue component boilerplate"
+  }
+}

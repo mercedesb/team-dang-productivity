@@ -1,0 +1,30 @@
+  {
+    "component": {
+      "prefix": "component",
+      "body": [
+        "<template>",
+        "",
+        "</template>",
+        "",
+        "<script>",
+        "export default {",
+        "\tname: '${TM_FILENAME_BASE}',",
+        "\tprops: {",
+        "\t\t$1",
+        "\t},",
+        "\tcomputed: {",
+        "\t\t$2",
+        "\t},",
+        "\tmethods: {",
+        "\t\t$3",
+        "\t}",
+        "}",
+        "</script>",
+        "",
+        "<style scoped lang=\"scss\">",
+        "",
+        "</style>"
+      ],
+      "description": "boilerplate for a Vue component"
+    }
+  }

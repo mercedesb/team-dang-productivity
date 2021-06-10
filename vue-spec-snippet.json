@@ -1,0 +1,23 @@
+{
+  "vue test file": {
+    "prefix": "spec",
+    "body": [
+      "import '@testing-library/jest-dom';",
+      "import { render, fireEvent } from '@testing-library/vue';",
+      "import ${TM_FILENAME/(.*)\\.spec\\..+$/$1/} from '../${TM_FILENAME/(.*)\\.spec\\..+$/$1/}.vue';",
+      "",
+      "const initialProps = {",
+      "\t$1",
+      "};",
+      "",
+      "const renderComponent = (options) => render(${TM_FILENAME/(.*)\\.spec\\..+$/$1/}, { ...options });",
+      "",
+      "describe('${TM_FILENAME/(.*)\\.spec\\..+$/$1/}', () => {",
+      "",
+      "\t$0",
+      "",
+      "})"
+    ],
+    "description": "vue component test boilerplate"
+  }
+}

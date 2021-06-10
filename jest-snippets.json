@@ -1,0 +1,31 @@
+{
+  "test describe": {
+    "prefix": "describe(",
+    "body": [
+      "describe('$1', () => {",
+      "",
+      "$0",
+      "",
+      "})"
+    ],
+    "description": "jest describe block"
+  },
+  "test assertion (it)": {
+    "prefix": "it(",
+    "body": [
+      "it('$1', () => {",
+      "$0",
+      "})"
+    ],
+    "description": "jest it assertion"
+  },
+  "test before": {
+    "prefix": "before",
+    "body": [
+      "beforeEach(() => {",
+      "$0",
+      "})"
+    ],
+    "description": "jest beforeEach block"
+  }
+}

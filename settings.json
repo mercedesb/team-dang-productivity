@@ -1,0 +1,39 @@
+{
+  "files.autoSave": "onFocusChange",
+  "bracket-pair-colorizer-2.colors": [
+    "#1F2020",
+    "#B2811E",
+    "#CC727B"
+  ],
+  "javascript.validate.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "createTest.testFileExtension": ".spec.js",
+  "createTest.testFolder": "./__tests__",
+  "createTest.srcFileExtension": ".vue"
+}
