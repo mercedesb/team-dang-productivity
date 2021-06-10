@@ -44,3 +44,15 @@ Below you'll find my most used snippets for DANG projects.
   - `describe` will get you a jest describe block with your cursor ready to start typing your `it` blocks
   - `it` will get you a jest it block with your cursor ready to start typing your assertions
   - `before` will get you a jest beforeEach block with your cursor ready to start typing your setup code
+
+## Aliases
+
+- Delete squash and merged branches to keep `git branch` clean (name the alias whatever you want)
+  - `alias gsqclean='git checkout -q main && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base main $branch) && [[ $(git cherry main $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'`
+- Avoid typing `npm run` a million times
+  - `alias nr="npm run"`
+- Start storybook nice & quick
+  - `alias sb="npm run storybook"`
+
+## Terminal
+- Install [`git-completion.bash`](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash) to get autocomplete for git branches
