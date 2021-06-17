@@ -2,8 +2,13 @@
 
 A little repo with some handy productivity saving configuration and tools for working on Lob's Vue repos.
 
+## Mac apps
+- [Rectangle](https://rectangleapp.com/) - Move and resize windows in macOS using keyboard shortcuts or snap areas. Makes putting windows side by side on your screen so easy! The recommended settings are great.
+
 ## Editor
 [VSCode](https://code.visualstudio.com/) is my personal IDE of choice. This repo assumes that you are using that IDE. If you're not, that's cool! All IDEs are welcome, I just know VSCode best and can offer tips and tricks for it 🤗
+
+I also recommend, installing the [shell command for VSCode](https://code.visualstudio.com/docs/setup/mac) so that you can use `code` in your shell to open a directory.
 
 ## Extensions
 ### General
