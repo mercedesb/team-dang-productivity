@@ -18,7 +18,7 @@ I also recommend, installing the [shell command for VSCode](https://code.visuals
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag): Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.
 
 ### Testing
-- [Switch to test](https://marketplace.visualstudio.com/items?itemName=eskimoblood.create-test): This extension will open the coresponding test file for the opened source file. If the file not exists, it will create a new one.
+- [Switch to test](https://marketplace.visualstudio.com/items?itemName=eskimoblood.create-test): This extension will open the coresponding test file for the opened source file. If the file does not exist, it will create a new one.
 ### Linting
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Integrates ESLint into VS Code.
 
