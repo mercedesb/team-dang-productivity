@@ -10,7 +10,7 @@
       "\t$1",
       "};",
       "",
-      "const renderComponent = (options) => render(${TM_FILENAME/(.*)\\.spec\\..+$/$1/}, { ...options });",
+      "const renderComponent = (options = {}) => render(${TM_FILENAME/(.*)\\.spec\\..+$/$1/}, { ...options });",
       "",
       "describe('${TM_FILENAME/(.*)\\.spec\\..+$/$1/}', () => {",
       "",
