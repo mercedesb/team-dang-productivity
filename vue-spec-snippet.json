@@ -3,7 +3,9 @@
     "prefix": "spec",
     "body": [
       "import '@testing-library/jest-dom';",
-      "import { render, fireEvent } from '@testing-library/vue';",
+      "import { render, fireEvent } from '@testing-library/vue';", // use this line if you're in a vanilla Vue repo, like ui-components (and remove this comment)
+      "import { fireEvent } from '@testing-library/vue';", // use this line if you're in the dashboard-vue repo so you get some test setup for free (and remove this comment)
+      "import { render } from '@/utils/testUtils';", // use this line if you're in the dashboard-vue repo so you get some test setup for free (and remove this comment)
       "import ${TM_FILENAME/(.*)\\.spec\\..+$/$1/} from '../${TM_FILENAME/(.*)\\.spec\\..+$/$1/}.vue';",
       "",
       "const initialProps = {",
